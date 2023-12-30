@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小飞博客</title>
+  
+  <subtitle>一个开发爱好者</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-12-30T04:55:07.044Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个ISO安装多个Windows版本-合成自定义Windows安装ISO</title>
+    <link href="http://example.com/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/"/>
+    <id>http://example.com/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/</id>
+    <published>2023-12-29T10:24:43.000Z</published>
+    <updated>2023-12-30T04:55:07.044Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/0.jpg" alt="0"></p><p>将多个Windows安装ISO版本合并到一个ISO中，一个文件就可安装多个Windows版本</p><p>以Windows10和Windows11做演示</p><h2 id="下载镜像"><a href="#下载镜像" class="headerlink" title="下载镜像"></a>下载镜像</h2><p>下载多个版本的镜像，以Windows10和Windows11做演示</p><h3 id="下载Windows10镜像"><a href="#下载Windows10镜像" class="headerlink" title="下载Windows10镜像"></a>下载Windows10镜像</h3><p><strong><font color="red">Windows10镜像官方下载地址：【<a href="https://www.microsoft.com/zh-cn/software-download/windows10">前往</a>】</font></strong></p><p><img src="/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/1.png" alt="1"></p><p>点击下载工具</p><p>点开工具，同意协议，然后这里选择为另一台电脑创建安装介质，把勾去掉可以自定义版本信息，选择ISO文件，选择ISO保存路径，选择好了之后就让他下载就行了</p><h3 id="下载Windows11镜像"><a href="#下载Windows11镜像" class="headerlink" title="下载Windows11镜像"></a>下载Windows11镜像</h3><p><strong><font color="red">Windows11镜像官方下载地址：【<a href="https://www.microsoft.com/zh-cn/software-download/windows11">前往</a>】</font></strong></p><p><img src="/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/2.png" alt="2"></p><p>点下载之后选择一下版本然后就会开始下载</p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>开始前确保你已经有了两个镜像</p><p>把两个镜像放在同一个文件夹</p><p>双击Windows10镜像，装载镜像</p><p>在source文件夹里，找到install.esd文件，复制进刚才放镜像的文件夹，然后弹出</p><p>双击Windows11镜像，装载镜像</p><p>在source文件夹里，找到install.wim文件，复制进刚才放镜像的文件夹，然后弹出</p><h2 id="合成镜像"><a href="#合成镜像" class="headerlink" title="合成镜像"></a>合成镜像</h2><p>接下来我们开始合成镜像</p><p>第一步：查看现有镜像版本</p><p>Win+R，输入cmd，Ctrl+Shift+回车</p><p>在cmd窗口中，输入：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /<span class="built_in">Get-ImageInfo</span> /ImageFile:你镜像的路径\install.esd</span><br></pre></td></tr></table></figure><p>可以查看当前Windows10镜像索引</p><p>再输入：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /<span class="built_in">Get-ImageInfo</span> /ImageFile:你镜像的路径\install.wim</span><br></pre></td></tr></table></figure><p>可以查看当前Windows11镜像索引</p><p>第二步：合并</p><p>在cmd窗口中输入：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /<span class="built_in">Export-Image</span> /SourceImageFile:你镜像的路径\install.esd /SourceIndex:<span class="number">3</span> /DestinationImageFile:你镜像的路径\install.wim /Compress:max /CheckIntegrity</span><br></pre></td></tr></table></figure><p>这条命令的意思是：将Windows10镜像里的第3个索引导入到Windows11索引文件里</p><p>如果你想将Windows10全部索引导入到Windows11的索引文件里，只要改变SourceIndex的参数就行了（Windows10一共有四个索引）</p><h2 id="重置镜像"><a href="#重置镜像" class="headerlink" title="重置镜像"></a>重置镜像</h2><p>这一步将把制作好的索引文件重新合成镜像</p><p>第一步：下载AnyBurn</p><p><strong><font color="red">AnyBurn下载：【<a href="https://www.anyburn.com/cn/download.htm">前往</a>】</font></strong></p><p>第二步：开始合成重置镜像</p><p>打开AnyBurn，找到编辑镜像文件，选择Windows10镜像文件，到Source文件夹，把install.esd擦除，再点击加号，选中刚才制作好的install.wim，确定，</p><p>然后导出镜像就可以了</p><p>现在你就拥有一个可以安装两个Windows版本的镜像了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%A</summary>
+      
+    
+    
+    
+    <category term="Windows" scheme="http://example.com/categories/Windows/"/>
+    
+    
+    <category term="Windows" scheme="http://example.com/tags/Windows/"/>
+    
+    <category term="ISO" scheme="http://example.com/tags/ISO/"/>
+    
+    <category term="系统" scheme="http://example.com/tags/%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>介绍-第一篇文章</title>
+    <link href="http://example.com/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://example.com/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
+    <published>2023-12-24T09:07:12.000Z</published>
+    <updated>2023-12-29T09:59:39.323Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>呀，是哪个小可爱来到了我的频道啊！！！</p><p>别走别走，你会喜欢我的！</p><h2 id="1-自述"><a href="#1-自述" class="headerlink" title="1.自述"></a>1.自述</h2><p>我是一个开发爱好者，目前会的语言有Java,Python啥的</p><p>我会持续分享关于这一类的知识，和我的看法，接下来让我来介绍一下我在各大代码托管平台的账号吧。</p><h2 id="2-我在各大代码托管平台的账号"><a href="#2-我在各大代码托管平台的账号" class="headerlink" title="2.我在各大代码托管平台的账号"></a>2.我在各大代码托管平台的账号</h2><h3 id="1-gitee"><a href="#1-gitee" class="headerlink" title="1.gitee"></a>1.gitee</h3><p>gitee作为国内最好用的代码托管平台，应该有很多人用吧，</p><p><a href="https://gitee.com/xuyifei1">我的gitee</a></p><h3 id="2-github"><a href="#2-github" class="headerlink" title="2.github"></a>2.github</h3><p>github是国外最大的代码托管平台，就是国内有点卡，</p><p>偷偷告诉大家个小秘密，把github域名加个“fast”访问，你会奇迹般的发现，它变快了！！！！！</p><p>比如：”github.com&#x2F;xuyife” 改为 “githubfast.com&#x2F;xuyife”</p><p><a href="https://githubfast.com/xuyife">我的github</a></p><h3 id="3-gitLab"><a href="#3-gitLab" class="headerlink" title="3.gitLab"></a>3.gitLab</h3><p>其实gitLab也挺好用，就是我还没打算用，还是个闲置账号</p><p><a href="https://gitlab.com/xuyifei_Dev">我的gitLab</a></p><h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3.总结"></a>3.总结</h2><p>总之我会一直分享我的经验和看法的，没事还会做些小项目开源在托管平台上，也谢谢大家的支持和鼓励，谢谢，谢谢！！！</p><p>你还可以用邮箱<a href="mailto:18916947008@163.com">联系我</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;呀，是哪个小可爱来到了我的频道啊！！！&lt;/p&gt;
+&lt;p&gt;别走别走，你会喜欢我的！&lt;/p&gt;
+&lt;h2 id=&quot;1-自述&quot;&gt;&lt;a href=&quot;#1-</summary>
+      
+    
+    
+    
+    <category term="关于我" scheme="http://example.com/categories/%E5%85%B3%E4%BA%8E%E6%88%91/"/>
+    
+    
+    <category term="自我介绍" scheme="http://example.com/tags/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/"/>
+    
+    <category term="开发者" scheme="http://example.com/tags/%E5%BC%80%E5%8F%91%E8%80%85/"/>
+    
+    <category term="博客" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
