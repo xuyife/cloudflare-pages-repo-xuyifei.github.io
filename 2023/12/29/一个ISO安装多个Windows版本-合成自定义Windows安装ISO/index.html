@@ -303,33 +303,20 @@
   </nav>
 
   
-   
-<div class="gitalk" id="gitalk-container"></div>
-
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-
-
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-
-<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
-
+   <link rel="stylesheet" href="https://unpkg.com/gitalk@latest/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+<script src="https://priesttomb.github.io/js/md5.min.js"></script>
 <script type="text/javascript">
-  var gitalk = new Gitalk({
-    clientID: '150bc696da7aae83c8da',
-    clientSecret: '0d152601b63906c38a07606a5ac563c75ea16fd8',
-    repo: 'xuyife.github.io.gitalk',
-    owner: 'xuyife',
-    admin: ['xuyife'],
-    // id: location.pathname,      // Ensure uniqueness and length less than 50
-    id: md5(location.pathname),
-    distractionFreeMode: false,  // Facebook-like distraction free mode
-    pagerDirection: 'last'
-  })
-
-  gitalk.render('gitalk-container')
-</script>
-  
+    new Gitalk({
+        clientID: '150bc696da7aae83c8da',
+        clientSecret: '0d152601b63906c38a07606a5ac563c75ea16fd8',
+        repo: 'xuyife.github.io.gitalk',
+        owner: 'xuyife.github.io.gitalk',
+        admin: 'xuyife',
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    }).render('gitalk-container')
+</script>  
     
 </article>
 
