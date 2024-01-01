@@ -300,8 +300,9 @@
     admin: ['xuyife'],
     // id: location.pathname,      // Ensure uniqueness and length less than 50
     id: md5(location.pathname),
-    distractionFreeMode: false,  // Facebook-like distraction free mode
+    distractionFreeMode: true,  // Facebook-like distraction free mode
     pagerDirection: 'last'
+    proxy: 'https://proxy'
   })
 
   gitalk.render('gitalk-container')
