@@ -27,6 +27,8 @@
 <link rel="stylesheet" href="/css/custom.css">
  
       <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+      <!-- 封面标闪烁 -->
+      <link rel="stylesheet" href="/css/xyfBlogTitle.css">
       <!-- Highlight.js -->
       <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet">
       <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
@@ -102,6 +104,7 @@
           font-size: 1.6rem;
         }
       </style>
+      
     <link rel="alternate" href="/atom.xml" title="小飞博客" type="application/atom+xml">
 </head>
   </html>
@@ -126,7 +129,9 @@
       <img src="/images/cover1.jpg" alt="image frame" />
     </div>
     <div class="cover-inner text-center text-white">
-      <h1><a href="/">小飞博客</a></h1>
+      <!-- 特效标题 <h1><a href="/">小飞博客</a></h1> -->
+      <h1 class="center-text glitch" data-text="小飞博客">小飞博客</h1>
+      <!-- <h1><a href="/">小飞博客</a></h1> -->
       <div id="subtitle-box">
         
           <span id="subtitle">感谢大家对我的支持和鼓励</span>
@@ -349,7 +354,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2023
+        2023-2024
         <i class="ri-heart-fill heart_icon"></i> Xuyifei
       </li>
     </ul>
@@ -737,6 +742,7 @@
     
 
   </div>
+
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":280,"height":280},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 <!--浏览器搞笑标题-->
