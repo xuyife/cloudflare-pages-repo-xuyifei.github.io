@@ -142,39 +142,38 @@
 </script>
 
 <p><canvas id="c"></canvas></p>
-<pre><code>&lt;div class=&quot;hud&quot;&gt;
-    &lt;div class=&quot;hud__score&quot;&gt;
-        &lt;div class=&quot;score-lbl&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;cube-count-lbl&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;pause-btn&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;slowmo&quot;&gt;
-        &lt;div class=&quot;slowmo__bar&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;menus&quot;&gt;
-    &lt;div class=&quot;menu menu--main&quot;&gt;
-        &lt;h1&gt;MENJA&lt;/h1&gt;
-        &lt;button type=&quot;button&quot; class=&quot;play-normal-btn&quot;&gt;开始游戏&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;play-casual-btn&quot;&gt;休闲模式&lt;/button&gt;
-        &lt;div class=&quot;credits&quot;&gt;一个 8kB 游戏，出自 &lt;a href=&quot;https://xuyife.github.io&quot;&gt;Xuyifei&lt;/a&gt;，&lt;a href=&quot;https://cmiller.tech&quot;&gt;原创：Caleb Miller&lt;/a&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;menu menu--pause&quot;&gt;
-        &lt;h1&gt;暂停&lt;/h1&gt;
-        &lt;button type=&quot;button&quot; class=&quot;resume-btn&quot;&gt;继续游戏&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;menu-btn--pause&quot;&gt;开始菜单&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;menu menu--score&quot;&gt;
-        &lt;h1&gt;游戏结束&lt;/h1&gt;
-        &lt;h2&gt;你的分数：&lt;/h2&gt;
-        &lt;div class=&quot;final-score-lbl&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;high-score-lbl&quot;&gt;&lt;/div&gt;
-        &lt;button type=&quot;button&quot; class=&quot;play-again-btn&quot;&gt;再玩一次&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;menu-btn--score&quot;&gt;开始菜单&lt;/button&gt;
-&lt;/div&gt;
-</code></pre>
-
+<div class="hud">
+        <div class="hud__score">
+            <div class="score-lbl"></div>
+            <div class="cube-count-lbl"></div>
+        </div>
+        <div class="pause-btn"><div></div></div>
+        <div class="slowmo">
+            <div class="slowmo__bar"></div>
+        </div>
+    </div>
+    
+<div class="menus">
+        <div class="menu menu--main">
+            <h1>MENJA</h1>
+            <button type="button" class="play-normal-btn">开始游戏</button>
+            <button type="button" class="play-casual-btn">休闲模式</button>
+            <div class="credits">一个 8kB 游戏，出自 <a target="_blank" rel="noopener" href="https://xuyife.github.io">Xuyifei</a>，<a target="_blank" rel="noopener" href="https://cmiller.tech">原创：Caleb Miller</a></div>
+</div>
+<div class="menu menu--pause">
+            <h1>暂停</h1>
+            <button type="button" class="resume-btn">继续游戏</button>
+            <button type="button" class="menu-btn--pause">开始菜单</button>
+</div>
+<div class="menu menu--score">
+            <h1>游戏结束</h1>
+            <h2>你的分数：</h2>
+            <div class="final-score-lbl"></div>
+            <div class="high-score-lbl"></div>
+            <button type="button" class="play-again-btn">再玩一次</button>
+            <button type="button" class="menu-btn--score">开始菜单</button>
+    </div>
+</div>
     
 <script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/globalConfig.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/state.js"></script>
@@ -192,6 +191,7 @@
 <script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/interaction.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/index.js"></script>
+
 <script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/PERF.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/expect.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/testRunner.js"></script>
@@ -397,7 +397,14 @@
     
     <li class="nav-item">
     <!-- 找到这里，添加代码 -->
-      <a class="nav-item-link" href="/Game">Google小恐龙</a>	  
+      <a class="nav-item-link" href="/Game/GoogleDion">Google小恐龙</a>	  
+			
+	<!-- 到这里结束 -->
+    </li>
+    
+    <li class="nav-item">
+    <!-- 找到这里，添加代码 -->
+      <a class="nav-item-link" href="/Game/Menja">Menja切箱子</a>	  
 			
 	<!-- 到这里结束 -->
     </li>
