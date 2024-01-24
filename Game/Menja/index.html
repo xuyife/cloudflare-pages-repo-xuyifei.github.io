@@ -129,27 +129,20 @@
        
     <div class="article-entry" itemprop="articleBody">
        
-  <!-- build:css combined.css 调用combined.css -->
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/style.css&quot;&gt;
-&lt;!-- endbuild --&gt;
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/style.css">
 
-&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-139938978-1&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-    if (location.hostname !== &#39;localhost&#39;) &#123;
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139938978-1"></script>
+<script>
+    if (location.hostname !== 'localhost') {
         window.dataLayer = window.dataLayer || [];
-        function gtag()&#123;dataLayer.push(arguments);&#125;
-        gtag(&#39;js&#39;, new Date());
-        gtag(&#39;config&#39;, &#39;UA-139938978-1&#39;);
-    &#125;
-&lt;/script&gt;
-</code></pre>
-<body>
-    <!-- Game canvas -->
-    <canvas id="c"></canvas>
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-139938978-1');
+    }
+</script>
 
-<pre><code>&lt;!-- Gameplay HUD --&gt;
-&lt;div class=&quot;hud&quot;&gt;
+<p><canvas id="c"></canvas></p>
+<pre><code>&lt;div class=&quot;hud&quot;&gt;
     &lt;div class=&quot;hud__score&quot;&gt;
         &lt;div class=&quot;score-lbl&quot;&gt;&lt;/div&gt;
         &lt;div class=&quot;cube-count-lbl&quot;&gt;&lt;/div&gt;
@@ -160,7 +153,6 @@
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;!-- Menu System --&gt;
 &lt;div class=&quot;menus&quot;&gt;
     &lt;div class=&quot;menu menu--main&quot;&gt;
         &lt;h1&gt;MENJA&lt;/h1&gt;
@@ -180,36 +172,30 @@
         &lt;div class=&quot;high-score-lbl&quot;&gt;&lt;/div&gt;
         &lt;button type=&quot;button&quot; class=&quot;play-again-btn&quot;&gt;再玩一次&lt;/button&gt;
         &lt;button type=&quot;button&quot; class=&quot;menu-btn--score&quot;&gt;开始菜单&lt;/button&gt;
-    &lt;/div&gt;
 &lt;/div&gt;
-
-&lt;!-- build:js combined.js --&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/globalConfig.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/state.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/utils.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/3dModels.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/Entity.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/getTarget.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/createBurst.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/sparks.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/hud.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/menus.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/actions.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tick.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/draw.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/canvas.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/interaction.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/index.js&quot;&gt;&lt;/script&gt;
-&lt;!-- endbuild --&gt;
-
-&lt;!-- build:remove --&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/PERF.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/expect.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/testRunner.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/utils.test.js&quot;&gt;&lt;/script&gt;
-&lt;!-- endbuild --&gt;
 </code></pre>
-</body>
+
+    
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/globalConfig.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/state.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/utils.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/3dModels.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/Entity.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/getTarget.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/createBurst.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/sparks.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/hud.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/menus.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/actions.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tick.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/draw.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/interaction.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/index.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/PERF.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/expect.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/testRunner.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/utils.test.js"></script>
  
       <!-- reward -->
       
