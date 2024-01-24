@@ -3,7 +3,7 @@
   <entry>
     <title>介绍-第一篇文章</title>
     <url>/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>呀，是哪个小可爱来到了我的频道啊！！！</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>呀，是哪个小可爱来到了我的频道啊！！！</p>
 <p>别走别走，你会喜欢我的！</p>
 <span id="more"></span>
 
@@ -33,7 +33,7 @@
   <entry>
     <title>一个ISO安装多个Windows版本-合成自定义Windows安装ISO</title>
     <url>/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/</url>
-    <content><![CDATA[<p><img src="/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/0.jpg" alt="0"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/0.jpg" alt="0"></p>
 <p>将多个Windows安装ISO版本合并到一个ISO中，一个文件就可安装多个Windows版本</p>
 <p>以Windows10和Windows11做演示</p>
 <span id="more"></span>

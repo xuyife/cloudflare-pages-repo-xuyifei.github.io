@@ -129,7 +129,87 @@
        
     <div class="article-entry" itemprop="articleBody">
        
-  <div id="container"></div> <script src="https://cdn.jsdelivr.net/gh/xuyife/Blog_Images/js/runner.js"></script> <script>  initRunner('#container'); function cancelSpace(e){     var e = e|| window.event;       var elm = e.srcElement || e.target;     var key = e.keyCode || e.charCode;     if(key == 32){              if(elm.tagName.toLowerCase()=="input" && elm.type.toLowerCase()=="text" || elm.tagName.toLowerCase() == "textarea"){                return;                  }           if(window.event){                      e.returnValue = false;             }           else{                   e.preventDefault();               }           } } document.onkeypress=cancelSpace; </script>
+  <!-- build:css combined.css 调用combined.css -->
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/style.css&quot;&gt;
+&lt;!-- endbuild --&gt;
+
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-139938978-1&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    if (location.hostname !== &#39;localhost&#39;) &#123;
+        window.dataLayer = window.dataLayer || [];
+        function gtag()&#123;dataLayer.push(arguments);&#125;
+        gtag(&#39;js&#39;, new Date());
+        gtag(&#39;config&#39;, &#39;UA-139938978-1&#39;);
+    &#125;
+&lt;/script&gt;
+</code></pre>
+<body>
+    <!-- Game canvas -->
+    <canvas id="c"></canvas>
+
+<pre><code>&lt;!-- Gameplay HUD --&gt;
+&lt;div class=&quot;hud&quot;&gt;
+    &lt;div class=&quot;hud__score&quot;&gt;
+        &lt;div class=&quot;score-lbl&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cube-count-lbl&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pause-btn&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;slowmo&quot;&gt;
+        &lt;div class=&quot;slowmo__bar&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Menu System --&gt;
+&lt;div class=&quot;menus&quot;&gt;
+    &lt;div class=&quot;menu menu--main&quot;&gt;
+        &lt;h1&gt;MENJA&lt;/h1&gt;
+        &lt;button type=&quot;button&quot; class=&quot;play-normal-btn&quot;&gt;开始游戏&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;play-casual-btn&quot;&gt;休闲模式&lt;/button&gt;
+        &lt;div class=&quot;credits&quot;&gt;一个 8kB 游戏，出自 &lt;a href=&quot;https://xuyife.github.io&quot;&gt;Xuyifei&lt;/a&gt;，&lt;a href=&quot;https://cmiller.tech&quot;&gt;原创：Caleb Miller&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;menu menu--pause&quot;&gt;
+        &lt;h1&gt;暂停&lt;/h1&gt;
+        &lt;button type=&quot;button&quot; class=&quot;resume-btn&quot;&gt;继续游戏&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;menu-btn--pause&quot;&gt;开始菜单&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;menu menu--score&quot;&gt;
+        &lt;h1&gt;游戏结束&lt;/h1&gt;
+        &lt;h2&gt;你的分数：&lt;/h2&gt;
+        &lt;div class=&quot;final-score-lbl&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;high-score-lbl&quot;&gt;&lt;/div&gt;
+        &lt;button type=&quot;button&quot; class=&quot;play-again-btn&quot;&gt;再玩一次&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;menu-btn--score&quot;&gt;开始菜单&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- build:js combined.js --&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/globalConfig.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/state.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/utils.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/3dModels.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/Entity.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/getTarget.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/createBurst.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/sparks.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/hud.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/menus.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/actions.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tick.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/draw.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/canvas.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/interaction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/index.js&quot;&gt;&lt;/script&gt;
+&lt;!-- endbuild --&gt;
+
+&lt;!-- build:remove --&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/PERF.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/expect.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/testRunner.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/xuyife/Blog_Images@master/game/Menja/tests/utils.test.js&quot;&gt;&lt;/script&gt;
+&lt;!-- endbuild --&gt;
+</code></pre>
+</body>
  
       <!-- reward -->
       
@@ -194,7 +274,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/Game/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/Game/Menja/" alt="微信分享二维码">
     </div>
 </div>
 
