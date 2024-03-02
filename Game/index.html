@@ -107,9 +107,6 @@
         }
       </style>
     <link rel="alternate" href="/atom.xml" title="小飞博客" type="application/atom+xml">
-<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
-<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
 </head>
   </html>
 </html>
@@ -199,8 +196,15 @@
             </header>
         </div>
     </article>
-    
-    <div id="aplayer-qmJcVmed" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1330348068" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+    <audio id="myAudio" autoplay="autoplay" loop="loop" controls="controls">
+        <source src="https://dl.stream.qqmusic.qq.com/C400004aq9F8311CX9.m4a?guid=2996101151&vkey=BC1D6F876ED24D01E0C2412CBE84A1C35DDDEC56FC14C07E835C0166DA30B1A81601C55D68B59287C1FD10236026BE77987F89D9AC08BE0A&uin=569239577&fromtag=120032">
+    </audio>
+    <script>
+        function playAudio(){
+​			audio = document.getElementById("myAudio");
+​			audio.play();
+        }
+    </script>
 </div> 
       <!-- reward -->
       
