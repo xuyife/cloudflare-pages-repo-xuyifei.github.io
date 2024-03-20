@@ -3,11 +3,11 @@
   <title>小飞博客</title>
   
   <subtitle>一个开发爱好者</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://xuyifei.js.cool/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://xuyifei.js.cool/"/>
   <updated>2024-01-01T09:44:46.082Z</updated>
-  <id>http://example.com/</id>
+  <id>https://xuyifei.js.cool/</id>
   
   <author>
     <name>Xuyifei &amp; FengJiayi（QQ：164487934）</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>一个ISO安装多个Windows版本-合成自定义Windows安装ISO</title>
-    <link href="http://example.com/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/"/>
-    <id>http://example.com/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/</id>
+    <link href="https://xuyifei.js.cool/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/"/>
+    <id>https://xuyifei.js.cool/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/</id>
     <published>2023-12-29T10:24:43.000Z</published>
     <updated>2024-01-01T09:44:46.082Z</updated>
     
@@ -32,23 +32,23 @@
     
     
     
-    <category term="Windows" scheme="http://example.com/categories/Windows/"/>
+    <category term="Windows" scheme="https://xuyifei.js.cool/categories/Windows/"/>
     
     
-    <category term="Windows" scheme="http://example.com/tags/Windows/"/>
+    <category term="Windows" scheme="https://xuyifei.js.cool/tags/Windows/"/>
     
-    <category term="ISO" scheme="http://example.com/tags/ISO/"/>
+    <category term="ISO" scheme="https://xuyifei.js.cool/tags/ISO/"/>
     
-    <category term="系统" scheme="http://example.com/tags/%E7%B3%BB%E7%BB%9F/"/>
+    <category term="系统" scheme="https://xuyifei.js.cool/tags/%E7%B3%BB%E7%BB%9F/"/>
     
-    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    <category term="安装" scheme="https://xuyifei.js.cool/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
   <entry>
     <title>介绍-第一篇文章</title>
-    <link href="http://example.com/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-    <id>http://example.com/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
+    <link href="https://xuyifei.js.cool/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>https://xuyifei.js.cool/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
     <published>2023-12-24T09:07:12.000Z</published>
     <updated>2024-03-01T09:55:02.829Z</updated>
     
@@ -71,16 +71,16 @@ function playAudio(){
     
     
     
-    <category term="关于我" scheme="http://example.com/categories/%E5%85%B3%E4%BA%8E%E6%88%91/"/>
+    <category term="关于我" scheme="https://xuyifei.js.cool/categories/%E5%85%B3%E4%BA%8E%E6%88%91/"/>
     
     
-    <category term="自我介绍" scheme="http://example.com/tags/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/"/>
+    <category term="自我介绍" scheme="https://xuyifei.js.cool/tags/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/"/>
     
-    <category term="开发者" scheme="http://example.com/tags/%E5%BC%80%E5%8F%91%E8%80%85/"/>
+    <category term="开发者" scheme="https://xuyifei.js.cool/tags/%E5%BC%80%E5%8F%91%E8%80%85/"/>
     
-    <category term="博客" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://xuyifei.js.cool/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    <category term="hexo" scheme="https://xuyifei.js.cool/tags/hexo/"/>
     
   </entry>
   
