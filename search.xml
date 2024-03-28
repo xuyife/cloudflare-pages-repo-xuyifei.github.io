@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>介绍-第一篇文章</title>
+    <url>/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>呀，是哪个小可爱来到了我的频道啊！！！！！</p>
+<p>别走别走，你会喜欢我的！</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1330348068&auto=1&height=66"></iframe>
+
+<span id="more"></span>
+
+<h2 id="1-自述"><a href="#1-自述" class="headerlink" title="1.自述"></a>1.自述</h2><p>我是一个开发爱好者，目前会的语言有Java,Python啥的</p>
+<p>我会持续分享关于这一类的知识，和我的看法，接下来让我来介绍一下我在各大代码托管平台的账号吧。</p>
+<h2 id="2-我在各大代码托管平台的账号"><a href="#2-我在各大代码托管平台的账号" class="headerlink" title="2.我在各大代码托管平台的账号"></a>2.我在各大代码托管平台的账号</h2><h3 id="1-gitee"><a href="#1-gitee" class="headerlink" title="1.gitee"></a>1.gitee</h3><p>gitee作为国内最好用的代码托管平台，应该有很多人用吧，</p>
+<p><a href="https://gitee.com/xuyifei1">我的gitee</a></p>
+<h3 id="2-github"><a href="#2-github" class="headerlink" title="2.github"></a>2.github</h3><p>github是国外最大的代码托管平台，就是国内有点卡，</p>
+<p>偷偷告诉大家个小秘密，把github域名加个“fast”访问，你会奇迹般的发现，它变快了！！！！！</p>
+<p>比如：”github.com&#x2F;xuyife” 改为 “githubfast.com&#x2F;xuyife”</p>
+<p><a href="https://githubfast.com/xuyife">我的github</a></p>
+<h3 id="3-gitLab"><a href="#3-gitLab" class="headerlink" title="3.gitLab"></a>3.gitLab</h3><p>其实gitLab也挺好用，就是我还没打算用，还是个闲置账号</p>
+<p><a href="https://gitlab.com/xuyifei_Dev">我的gitLab</a></p>
+<h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3.总结"></a>3.总结</h2><p>总之我会一直分享我的经验和看法的，没事还会做些小项目开源在托管平台上，也谢谢大家的支持和鼓励，谢谢，谢谢！！！</p>
+<p>你还可以用邮箱<a href="mailto:18916947008@163.com">联系我</a></p>
+]]></content>
+      <categories>
+        <category>关于我</category>
+      </categories>
+      <tags>
+        <tag>自我介绍</tag>
+        <tag>开发者</tag>
+        <tag>博客</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一个ISO安装多个Windows版本-合成自定义Windows安装ISO</title>
     <url>/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://gitee.com/xuyifei1/blog-image/raw/master/Image/cmpt-img.jpg" alt="computer-img"></p>
@@ -55,36 +87,6 @@
         <tag>ISO</tag>
         <tag>系统</tag>
         <tag>安装</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>介绍-第一篇文章</title>
-    <url>/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>呀，是哪个小可爱来到了我的频道啊！！！！！</p>
-<p>别走别走，你会喜欢我的！</p>
-<span id="more"></span>
-
-<h2 id="1-自述"><a href="#1-自述" class="headerlink" title="1.自述"></a>1.自述</h2><p>我是一个开发爱好者，目前会的语言有Java,Python啥的</p>
-<p>我会持续分享关于这一类的知识，和我的看法，接下来让我来介绍一下我在各大代码托管平台的账号吧。</p>
-<h2 id="2-我在各大代码托管平台的账号"><a href="#2-我在各大代码托管平台的账号" class="headerlink" title="2.我在各大代码托管平台的账号"></a>2.我在各大代码托管平台的账号</h2><h3 id="1-gitee"><a href="#1-gitee" class="headerlink" title="1.gitee"></a>1.gitee</h3><p>gitee作为国内最好用的代码托管平台，应该有很多人用吧，</p>
-<p><a href="https://gitee.com/xuyifei1">我的gitee</a></p>
-<h3 id="2-github"><a href="#2-github" class="headerlink" title="2.github"></a>2.github</h3><p>github是国外最大的代码托管平台，就是国内有点卡，</p>
-<p>偷偷告诉大家个小秘密，把github域名加个“fast”访问，你会奇迹般的发现，它变快了！！！！！</p>
-<p>比如：”github.com&#x2F;xuyife” 改为 “githubfast.com&#x2F;xuyife”</p>
-<p><a href="https://githubfast.com/xuyife">我的github</a></p>
-<h3 id="3-gitLab"><a href="#3-gitLab" class="headerlink" title="3.gitLab"></a>3.gitLab</h3><p>其实gitLab也挺好用，就是我还没打算用，还是个闲置账号</p>
-<p><a href="https://gitlab.com/xuyifei_Dev">我的gitLab</a></p>
-<h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3.总结"></a>3.总结</h2><p>总之我会一直分享我的经验和看法的，没事还会做些小项目开源在托管平台上，也谢谢大家的支持和鼓励，谢谢，谢谢！！！</p>
-<p>你还可以用邮箱<a href="mailto:18916947008@163.com">联系我</a></p>
-]]></content>
-      <categories>
-        <category>关于我</category>
-      </categories>
-      <tags>
-        <tag>自我介绍</tag>
-        <tag>开发者</tag>
-        <tag>博客</tag>
-        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
