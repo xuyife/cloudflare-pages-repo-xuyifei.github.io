@@ -10,7 +10,6 @@
     <meta http-equiv="Access-Control-Allow-Methods" content="POST, GET, OPTIONS, DELETE, HEAD"/>
     <meta http-equiv="Access-Control-Max-Age" content="3600"/>
     <meta http-equiv="Access-Control-Allow-Headers" content="access-control-allow-origin, authority, content-type, version-info, X-Requested-With"/>
-    <meta name="referrer" content="no-referrer" />
     <meta charset="utf-8" />
        
       <meta name="keywords" content="生活，思考，代码，博客" />
@@ -26,7 +25,69 @@
       
       <link rel="shortcut icon" href="/favicon.ico" />
       
-      <link rel="stylesheet" href="https://gitee.com/xuyifei1/blog-image/raw/master/source/dist/main.css"/>
+      <link rel="stylesheet" href="https://gitee.com/xuyifei1/blog-image/raw/master/source/dist/main.css" referrerpolicy="no-referrer"/>
+      <style>
+        /*底部标签*/
+        .github-badge {
+          display: inline-block;
+          border-radius: 4px;
+          text-shadow: none;
+          font-size: 12px;
+          color: #fff;
+          line-height: 15px;
+          background-color: #ABBAC3;
+          margin-bottom: 5px;
+        }
+        .github-badge .badge-subject {
+          display: inline-block;
+          background-color: #4D4D4D;
+          padding: 4px 4px 4px 6px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+        .github-badge .badge-value {
+          display: inline-block;
+          padding: 4px 6px 4px 4px;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+        .github-badge .bg-brightgreen {
+          background-color: #4DC820 !important;
+        }
+        .github-badge .bg-cyan {
+          background-color: #008B8B !important;
+        }
+        .github-badge .bg-orange {
+          background-color: #FFA500 !important;
+        }
+        .github-badge .bg-yellow {
+          background-color: #D8B024 !important;
+        }
+        .github-badge .bg-blueviolet {
+          background-color: #8833D7 !important;
+        }
+        .github-badge .bg-pink {
+          background-color: #F26BAE !important;
+        }
+        .github-badge .bg-red {
+          background-color: #e05d44 !important;
+        }
+        .github-badge .bg-black {
+          background-color: #000000 !important;
+        }
+        .github-badge .bg-blue {
+          background-color: #007EC6 !important;
+        }
+        .github-badge .bg-lightgrey {
+          background-color: #9F9F9F !important;
+        }
+        .github-badge .bg-grey, .github-badge .bg-gray {
+          background-color: #555 !important;
+        }
+        .github-badge .bg-lightgrey, .github-badge .bg-lightgray {
+          background-color: #9f9f9f !important;
+        }
+      </style>
       
 <link rel="stylesheet" href="https://jsdelivr.codeqihan.com/npm/remixicon@2.1.0/fonts/remixicon.css">
 
@@ -37,7 +98,7 @@
       <!-- 封面标闪烁 -->
       <link rel="stylesheet" href="/css/xyfBlogTitle.css">
       <!-- Highlight.js -->
-      <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet">
+      <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet" rel="no-referrer">
       <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
       <script>hljs.initHighlightingOnLoad();</script>
       <!-- jquery，懒加载、统计、说说需要的jquery -->
@@ -47,9 +108,10 @@
 
       <link
         rel="stylesheet"
+        referrerpolicy="no-referrer"
         href="https://gitee.com/xuyifei1/blog-image/raw/master/jsdelivr/bulma.min.css"
       />
-      <script src="https://gitee.com/xuyifei1/blog-image/raw/master/jsdelivr/sweetalert2.min.js"></script>
+      <script src="https://gitee.com/xuyifei1/blog-image/raw/master/jsdelivr/sweetalert2.min.js" referrerpolicy="no-referrer"></script>
 
       <!-- mermaid -->
       
@@ -342,6 +404,21 @@
         
       </li>
     </ul>
+    
+    </ul>
+    <!-- 底部标牌 -->
+	<ul>
+		<li>
+		<div class="github-badge"><a style="color: #fff" href="https://hexo.io" target="_blank" title="Hexo强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a></div>&nbsp;
+		<div class="github-badge"><a style="color: #fff" href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank" title="主题Ayer"><span class="badge-subject">Theme</span><span class="badge-value bg-cyan">Ayer</span></a></div>&nbsp;
+		<div class="github-badge"><a style="color: #fff" href="https://dns.he.net" target="_blank" title="网站托管于HURRICANE ELECTRIC"><span class="badge-subject">Hosted</span><span class="badge-value bg-red">HURRICANE ELECTRIC</span></a></div>&nbsp;
+		<div class="github-badge"><a style="color: #fff" href="https://clcdn.cn" target="_blank" title="苍龙CDN加速整站"><span class="badge-subject">DNS</span><span class="badge-value bg-blueviolet">CLCDN</span></a></div>&nbsp;
+		<div class="github-badge"><a style="color: #fff" href="https://gitee.com" target="_blank" title="gitee加速静态"><span class="badge-subject">CDN</span><span class="badge-value bg-orange">gitee</span></a></div>&nbsp;
+		<div class="github-badge"><a style="color: #fff" href="" target="_blank" title="本站访客数"><span class="badge-subject">UV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_uv"></span></a></div>&nbsp;
+	    <div class="github-badge"><a style="color: #fff" href="" target="_blank" title="本站访问量"><span class="badge-subject">PV</span><span class="badge-value bg-pink" id="busuanzi_value_site_pv"></span></a></div>
+		</li>
+	</ul>
+  <ul>
     <!-- 运行天数 -->
     <ul>
       <li><span id="runtime_span"></span></li>
@@ -363,7 +440,7 @@
     }
 	show_runtime();
        </script>
-    </ul>
+  </ul>
   </div>
 </footer>    
     </main>
@@ -382,7 +459,7 @@
 <nav class="navbar">
   
   <div class="logo">
-    <a href="/"><img src="https://gitee.com/xuyifei1/blog-image/raw/master/Image/ayer-side.svg" alt="小飞博客"></a>
+    <a href="/"><img src="https://gitee.com/xuyifei1/blog-image/raw/master/Image/ayer-side.svg" alt="小飞博客" referrerpolicy="no-referrer"></a>
   </div>
   
   <ul class="nav nav-main">
@@ -516,29 +593,29 @@
   <div class="reward-box">
     
     <div class="reward-item">
-      <img class="reward-img" src="https://gitee.com/xuyifei1/blog-image/raw/master/Image/alipay.jpg">
+      <img class="reward-img" src="https://gitee.com/xuyifei1/blog-image/raw/master/Image/alipay.jpg" referrerpolicy="no-referrer">
       <span class="reward-type">支付宝</span>
     </div>
     
     
     <div class="reward-item">
-      <img class="reward-img" src="https://gitee.com/xuyifei1/blog-image/raw/master/Image/wechat.jpg">
+      <img class="reward-img" src="https://gitee.com/xuyifei1/blog-image/raw/master/Image/wechat.jpg" referrerpolicy="no-referrer">
       <span class="reward-type">微信</span>
     </div>
     
   </div>
 </div>
-    <script src="https://gitee.com/xuyifei1/blog-image/raw/master/source/js/jquery-3.6.0.min.js"></script>
-<script src="https://gitee.com/xuyifei1/blog-image/raw/master/source/js/lazyload.min.js"></script>
+    <script src="https://gitee.com/xuyifei1/blog-image/raw/master/source/js/jquery-3.6.0.min.js" referrerpolicy="no-referrer"></script>
+<script src="https://gitee.com/xuyifei1/blog-image/raw/master/source/js/lazyload.min.js" referrerpolicy="no-referrer"></script>
 <!-- Tocbot -->
 
-<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js" referrerpolicy="no-referrer"></script>
 <link
   rel="stylesheet"
   href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
 />
 <script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
-<script src="https://gitee.com/xuyifei1/blog-image/raw/master/source/dist/main.js"></script>
+<script src="https://gitee.com/xuyifei1/blog-image/raw/master/source/dist/main.js" referrerpolicy="no-referrer"></script>
 <!-- ImageViewer -->
  <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -718,7 +795,7 @@
 </script>
  
 <!-- CanvasBackground -->
- <script src="https://gitee.com/xuyifei1/blog-image/raw/master/source/js/dz.js"></script> 
+ <script src="https://gitee.com/xuyifei1/blog-image/raw/master/source/js/dz.js" referrerpolicy="no-referrer"></script> 
 <script>
   if (window.mermaid) {
     mermaid.initialize({ theme: "forest" });
@@ -733,10 +810,10 @@
 
 	<!-- 三角彩带背景 -->
   <canvas id="evanyou-canvas" style="opacity: 0.3; position: fixed; top: 0px; left: 0px; z-index: -1; width: 100%; height: 100%; pointer-events: none;"></canvas>
-  <script src="https://gitee.com/xuyifei1/blog-image/raw/master/jsdelivr/evanyou_canvas.js"></script>
+  <script src="https://gitee.com/xuyifei1/blog-image/raw/master/jsdelivr/evanyou_canvas.js" referrerpolicy="no-referrer"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":280,"height":280},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 <!--浏览器搞笑标题-->
-<script type="text/javascript" src="https://gitee.com/xuyifei1/blog-image/raw/master/source/js/FunnyTitle.js"></script>
+<script type="text/javascript" src="https://gitee.com/xuyifei1/blog-image/raw/master/source/js/FunnyTitle.js" referrerpolicy="no-referrer"></script>
 
 </html>
