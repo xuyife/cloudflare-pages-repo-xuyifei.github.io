@@ -167,53 +167,28 @@
       <div class="shuoshou-center ">
 
 	<style type="text/css">
-			#contentss {
-				position: relative;
-				max-width: 800px;
-				margin:0 auto;
-			}
+		#contentss {
+			position: relative;
+			max-width: 800px;
+			margin: 0 auto;
+		}
 	</style>
- 
-	<h1 class="page-type-title" style="border-left:0;text-align:center;" itemprop="name">说   说</h1>
-	
-	<div id="contentss">
-	  
-	  <script>
-		var img = "https://img2.imgtp.com/2024/04/09/aYiO5seE.jpg"; //说说旁边显示的头像
-		var appID = "jEsJmbF86VB8dUZozRnHeqJQ-MdYXbMMI";
-		var appKEY = "Bu9loFK3ol1P1iTu1roH31Hk";
-		var per = "7"; //每页显示说说的数量
-		var username = "Xuyifei"; //Leancloud中设置的用户名
-		var placeholder1="请发表你的感言！"; //在编辑说说的输入框中的占位符
-		var placeholder2="头像URL";  //在编辑密码的输入框中的占位符
-		var lazy = 1; //是否开启懒加载动画
-	  </script>
-	  <div id="lazy"></div>
-	  <div id="artitalk"></div>
-	  <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
-		<!-- 自定义样式 -->
-		  <style>
-			.cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
-			  background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/images/shuoshuo.jpg") 0px 0px;
-			  color: white;
-			}
-			.cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after {
-			  border-right-color:  rgba(255, 165, 150, 0.5);
-			}
-			.cbp_tmtimeline>li .cbp_tmlabel {
-			  background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("h"), url("https://fastly.jsdelivr.net/gh/XXXZhy/Blog_Image/images/shuoshuo.jpg") 0px 0px;
-			  color: white;
-			}
-			.cbp_tmtimeline>li .cbp_tmlabel:after {
-			  border-right-color:  rgba(0, 228, 255, 0.35);
-			}
-			.button {
-			  background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://fastly.jsdelivr.net/gh/XXXZhy/Blog_Image/images/shuoshuo.jpg") 0px 0px;
-			  color: white;
-			}
 
-		  </style>
-		  <!-- 自定义样式.end -->
+	<h1 class="page-type-title" style="border-left:0;text-align:center;" itemprop="name">说 说</h1>
+
+	<div id="contentss">
+
+		<!-- 引用 artitalk -->
+		<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+		<!-- 存放说说的容器 -->
+		<div id="artitalk_main"></div>
+		<script>
+			new Artitalk({
+				serverURL: 'https://uet.xuyifei.js.cool',
+				appId: 'jEsJmbF86VB8dUZozRnHeqJQ-MdYXbMMI', // Your LeanCloud appId
+				appKey: 'Bu9loFK3ol1P1iTu1roH31Hk' // Your LeanCloud appKey
+			})
+		</script>
 
 	</div>
 </div>
