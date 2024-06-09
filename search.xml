@@ -65,10 +65,10 @@
 </ul>
 <span id="more"></span>
 <h2 id="1-GithubFast国内镜像失效">1.GithubFast国内镜像失效</h2>
-<p>最近很多网友应该都发现了我之前推荐的<a href="githubfast.com">githubfast.com</a>国内github镜像失效了，打开之后会出现一行文字：</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/To_prevent_abuse,_only_git_is_allowed.png" alt="To_prevent_abuse_only_git_is_allowed"></p>
+<p>最近很多网友应该都发现了我之前推荐的<a href="https://githubfast.com">githubfast.com</a>国内github镜像失效了，打开之后会出现一行文字：</p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/To_prevent_abuse,_only_git_is_allowed.png" alt="To_prevent_abuse_only_git_is_allowed"></p>
 <p>翻译过来大概就是：为了防止滥用，请使用正版github。目前没有解决办法。</p>
-<p>但是我们可以使用加速器加速<a href="github.com">github.com</a>的访问。</p>
+<p>但是我们可以使用加速器加速<a href="https://github.com">github.com</a>的访问。</p>
 <h2 id="2-Github加速">2.Github加速</h2>
 <p>接下来我来介绍几种加速方法</p>
 <p>注：本教程只适配Windows系统</p>
@@ -78,16 +78,16 @@
 <p>Hosts文件所在文件夹路径如下：</p>
 <figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">C:<span class="keyword">\Windows</span><span class="keyword">\System</span>32<span class="keyword">\drivers</span><span class="keyword">\etc</span></span><br></pre></td></tr></table></figure>
 <p>使用文件资源管理器打开此目录</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/Explorer.png" alt="Explorer"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/Explorer.png" alt="Explorer"></p>
 <p>在这里你将看到<code>hosts</code>文件，右键该文件，点击属性，点击“安全”，编辑权限</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/hosts.png" alt="hosts"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/hosts.png" alt="hosts"></p>
 <p>点击“编辑”，编辑“Users”的权限</p>
 <p>增加修改和写入的权限，点击确定。</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/hosts2.png" alt="hosts2"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/hosts2.png" alt="hosts2"></p>
 <p>点击确定后可能会跳出安全提示，点击“是”即可</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/Yes.png" alt="Yes"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/Yes.png" alt="Yes"></p>
 <p>回到“常规”一栏，取消勾选“只读”</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/Yes2.png" alt="Yes2"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/Yes2.png" alt="Yes2"></p>
 <h4 id="2-1-2下载软件-SwitchHosts">2.1.2下载软件-SwitchHosts</h4>
 <p>这里是SwitchHosts的GitHub发布页链接，您可以选择在发布页下载最新版本：</p>
 <p><a href="https://github.com/oldj/SwitchHosts/releases">https://github.com/oldj/SwitchHosts/releases</a></p>
@@ -96,36 +96,36 @@
 <h4 id="2-1-3安装并使用SwitchHosts">2.1.3安装并使用SwitchHosts</h4>
 <p>点击SwitchHosts的安装包，执行安装步骤（可以安装在系统盘以外的盘符），就可以安装SwitchHosts软件了。</p>
 <p>安装完成后，打开SwitchHosts，点击左上角的”+“号：</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/SwitchHosts1.webp" alt="SwitchHosts1"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/SwitchHosts1.webp" alt="SwitchHosts1"></p>
 <p>点击”远程“，如图填入相关信息：</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/SwitchHosts2.webp" alt="SwitchHosts2"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/SwitchHosts2.webp" alt="SwitchHosts2"></p>
 <p>Hosts类型选择远程，标题可随便起，URL如下：</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">https://gitee.com/fliu2476/github-hosts/raw/main/hosts</span><br></pre></td></tr></table></figure>
 <p>根据作者的更新频率，建议您将自动刷新时间调整为1小时。</p>
 <p>随后点击确定，再启动规则：</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/SwitchHosts3.webp" alt="SwitchHosts3"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/SwitchHosts3.webp" alt="SwitchHosts3"></p>
 <p>若出现”操作成功“字样，则GitHub加速成功！</p>
 <p>若出现”没有写入hosts文件的权限“字样，请参照第一节更改hosts文件权限：</p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/SwitchHosts4.webp" alt="SwitchHosts4"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/SwitchHosts4.webp" alt="SwitchHosts4"></p>
 <h4 id="2-1-4访问演示">2.1.4访问演示</h4>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/Github1.webp" alt="Github1"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/Github1.webp" alt="Github1"></p>
 <h3 id="2-2-Watt-Toolkit加速">2.2.Watt Toolkit加速</h3>
 <p>**「Watt Toolkit」是一个开源跨平台的多功能 Steam 工具箱。**它是由江苏蒸汽凡星科技有限公司开发与维护的 <a href="https://www.gnu.org/philosophy/free-sw.zh-cn.html">(GNU)</a> 自由开源软件，采用 <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL v3</a> 开源协议同时发布于 <a href="https://github.com/BeyondDimension/SteamTools">Github</a> 及 <a href="https://gitee.com/rmbgame/SteamTools">Gitee</a>。</p>
 <p><strong>可用于加速GitHub，其他有趣功能可以自行探索哦！</strong></p>
 <h4 id="2-2-1下载与安装">2.2.1下载与安装</h4>
 <p>官方正版下载地址跳转：<strong><a href="https://steampp.net/">「Watt Toolkit」(原steam++)</a></strong></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit1.png" alt="WattToolkit1"></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit2.png" alt="WattToolkit2"></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit3.png" alt="WattToolkit3"></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit4.png" alt="WattToolkit4"></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit5.png" alt="WattToolkit5"></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit6.png" alt="WattToolkit6"></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit7.png" alt="WattToolkit7"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit1.png" alt="WattToolkit1"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit2.png" alt="WattToolkit2"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit3.png" alt="WattToolkit3"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit4.png" alt="WattToolkit4"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit5.png" alt="WattToolkit5"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit6.png" alt="WattToolkit6"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit7.png" alt="WattToolkit7"></p>
 <h4 id="2-2-2Watt-Toolkit的使用及配置">2.2.2Watt Toolkit的使用及配置</h4>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit8.png" alt="WattToolkit8"></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit9.png" alt="WattToolkit9"></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit10.png" alt="WattToolkit10"></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit11.png" alt="WattToolkit11"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit8.png" alt="WattToolkit8"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit9.png" alt="WattToolkit9"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit10.png" alt="WattToolkit10"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/WattToolkit11.png" alt="WattToolkit11"></p>
 <h2 id="3-结尾">3.结尾</h2>
 <p>这个问题其实从今年年初就有了，但因为网站维护原因，一直拖到现在才发</p>
 <p>参考：</p>
@@ -157,12 +157,12 @@
 <p>下载多个版本的镜像，以Windows10和Windows11做演示</p>
 <h3 id="下载Windows10镜像">下载Windows10镜像</h3>
 <p><strong><font color="red">Windows10镜像官方下载地址：【<a href="https://www.microsoft.com/zh-cn/software-download/windows10">前往</a>】</font></strong></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/1.png" alt="1"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/1.png" alt="1"></p>
 <p>点击下载工具</p>
 <p>点开工具，同意协议，然后这里选择为另一台电脑创建安装介质，把勾去掉可以自定义版本信息，选择ISO文件，选择ISO保存路径，选择好了之后就让他下载就行了</p>
 <h3 id="下载Windows11镜像">下载Windows11镜像</h3>
 <p><strong><font color="red">Windows11镜像官方下载地址：【<a href="https://www.microsoft.com/zh-cn/software-download/windows11">前往</a>】</font></strong></p>
-<p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/2.png" alt="2"></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/2.png" alt="2"></p>
 <p>点下载之后选择一下版本然后就会开始下载</p>
 <h2 id="准备工作">准备工作</h2>
 <p>开始前确保你已经有了两个镜像</p>
