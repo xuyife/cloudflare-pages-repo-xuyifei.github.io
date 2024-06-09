@@ -38,65 +38,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一个ISO安装多个Windows版本-合成自定义Windows安装ISO</title>
-    <url>/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/cmpt-img.jpg" alt="computer-img"></p>
-<p>将多个Windows安装ISO版本合并到一个ISO中，一个文件就可安装多个Windows版本</p>
-<p>以Windows10和Windows11做演示</p>
-<span id="more"></span>
-<h2 id="下载镜像">下载镜像</h2>
-<p>下载多个版本的镜像，以Windows10和Windows11做演示</p>
-<h3 id="下载Windows10镜像">下载Windows10镜像</h3>
-<p><strong><font color="red">Windows10镜像官方下载地址：【<a href="https://www.microsoft.com/zh-cn/software-download/windows10">前往</a>】</font></strong></p>
-<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/1.png" alt="1"></p>
-<p>点击下载工具</p>
-<p>点开工具，同意协议，然后这里选择为另一台电脑创建安装介质，把勾去掉可以自定义版本信息，选择ISO文件，选择ISO保存路径，选择好了之后就让他下载就行了</p>
-<h3 id="下载Windows11镜像">下载Windows11镜像</h3>
-<p><strong><font color="red">Windows11镜像官方下载地址：【<a href="https://www.microsoft.com/zh-cn/software-download/windows11">前往</a>】</font></strong></p>
-<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/2.png" alt="2"></p>
-<p>点下载之后选择一下版本然后就会开始下载</p>
-<h2 id="准备工作">准备工作</h2>
-<p>开始前确保你已经有了两个镜像</p>
-<p>把两个镜像放在同一个文件夹</p>
-<p>双击Windows10镜像，装载镜像</p>
-<p>在source文件夹里，找到install.esd文件，复制进刚才放镜像的文件夹，然后弹出</p>
-<p>双击Windows11镜像，装载镜像</p>
-<p>在source文件夹里，找到install.wim文件，复制进刚才放镜像的文件夹，然后弹出</p>
-<h2 id="合成镜像">合成镜像</h2>
-<p>接下来我们开始合成镜像</p>
-<p>第一步：查看现有镜像版本</p>
-<p>Win+R，输入cmd，Ctrl+Shift+回车</p>
-<p>在cmd窗口中，输入：</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">Dism /<span class="built_in">Get-ImageInfo</span> /ImageFile:你镜像的路径\install.esd</span><br></pre></td></tr></table></figure>
-<p>可以查看当前Windows10镜像索引</p>
-<p>再输入：</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">Dism /<span class="built_in">Get-ImageInfo</span> /ImageFile:你镜像的路径\install.wim</span><br></pre></td></tr></table></figure>
-<p>可以查看当前Windows11镜像索引</p>
-<p>第二步：合并</p>
-<p>在cmd窗口中输入：</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">Dism /<span class="built_in">Export-Image</span> /SourceImageFile:你镜像的路径\install.esd /SourceIndex:<span class="number">3</span> /DestinationImageFile:你镜像的路径\install.wim /Compress:max /CheckIntegrity</span><br></pre></td></tr></table></figure>
-<p>这条命令的意思是：将Windows10镜像里的第3个索引导入到Windows11索引文件里</p>
-<p>如果你想将Windows10全部索引导入到Windows11的索引文件里，只要改变SourceIndex的参数就行了（Windows10一共有四个索引）</p>
-<h2 id="重置镜像">重置镜像</h2>
-<p>这一步将把制作好的索引文件重新合成镜像</p>
-<p>第一步：下载AnyBurn</p>
-<p><strong><font color="red">AnyBurn下载：【<a href="https://www.anyburn.com/cn/download.htm">前往</a>】</font></strong></p>
-<p>第二步：开始合成重置镜像</p>
-<p>打开AnyBurn，找到编辑镜像文件，选择Windows10镜像文件，到Source文件夹，把install.esd擦除，再点击加号，选中刚才制作好的install.wim，确定，</p>
-<p>然后导出镜像就可以了</p>
-<p>现在你就拥有一个可以安装两个Windows版本的镜像了</p>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>ISO</tag>
-        <tag>系统</tag>
-        <tag>安装</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>震惊！！！国内超快速github镜像停止服务！</title>
     <url>/2024/04/04/%E9%9C%87%E6%83%8A%EF%BC%81%EF%BC%81%EF%BC%81%E5%9B%BD%E5%86%85%E8%B6%85%E5%BF%AB%E9%80%9Fgithub%E9%95%9C%E5%83%8F%E5%81%9C%E6%AD%A2%E6%9C%8D%E5%8A%A1%EF%BC%81/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="目录">目录</h2>
@@ -203,6 +144,65 @@
         <tag>Gtihub</tag>
         <tag>加速</tag>
         <tag>githubfast.com</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一个ISO安装多个Windows版本-合成自定义Windows安装ISO</title>
+    <url>/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://jsdelivr.xuyifei.cloudns.biz/gh/xuyife/source/files/uploads/2024-4-4/cmpt-img.jpg" alt="computer-img"></p>
+<p>将多个Windows安装ISO版本合并到一个ISO中，一个文件就可安装多个Windows版本</p>
+<p>以Windows10和Windows11做演示</p>
+<span id="more"></span>
+<h2 id="下载镜像">下载镜像</h2>
+<p>下载多个版本的镜像，以Windows10和Windows11做演示</p>
+<h3 id="下载Windows10镜像">下载Windows10镜像</h3>
+<p><strong><font color="red">Windows10镜像官方下载地址：【<a href="https://www.microsoft.com/zh-cn/software-download/windows10">前往</a>】</font></strong></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/1.png" alt="1"></p>
+<p>点击下载工具</p>
+<p>点开工具，同意协议，然后这里选择为另一台电脑创建安装介质，把勾去掉可以自定义版本信息，选择ISO文件，选择ISO保存路径，选择好了之后就让他下载就行了</p>
+<h3 id="下载Windows11镜像">下载Windows11镜像</h3>
+<p><strong><font color="red">Windows11镜像官方下载地址：【<a href="https://www.microsoft.com/zh-cn/software-download/windows11">前往</a>】</font></strong></p>
+<p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/2.png" alt="2"></p>
+<p>点下载之后选择一下版本然后就会开始下载</p>
+<h2 id="准备工作">准备工作</h2>
+<p>开始前确保你已经有了两个镜像</p>
+<p>把两个镜像放在同一个文件夹</p>
+<p>双击Windows10镜像，装载镜像</p>
+<p>在source文件夹里，找到install.esd文件，复制进刚才放镜像的文件夹，然后弹出</p>
+<p>双击Windows11镜像，装载镜像</p>
+<p>在source文件夹里，找到install.wim文件，复制进刚才放镜像的文件夹，然后弹出</p>
+<h2 id="合成镜像">合成镜像</h2>
+<p>接下来我们开始合成镜像</p>
+<p>第一步：查看现有镜像版本</p>
+<p>Win+R，输入cmd，Ctrl+Shift+回车</p>
+<p>在cmd窗口中，输入：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">Dism /<span class="built_in">Get-ImageInfo</span> /ImageFile:你镜像的路径\install.esd</span><br></pre></td></tr></table></figure>
+<p>可以查看当前Windows10镜像索引</p>
+<p>再输入：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">Dism /<span class="built_in">Get-ImageInfo</span> /ImageFile:你镜像的路径\install.wim</span><br></pre></td></tr></table></figure>
+<p>可以查看当前Windows11镜像索引</p>
+<p>第二步：合并</p>
+<p>在cmd窗口中输入：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">Dism /<span class="built_in">Export-Image</span> /SourceImageFile:你镜像的路径\install.esd /SourceIndex:<span class="number">3</span> /DestinationImageFile:你镜像的路径\install.wim /Compress:max /CheckIntegrity</span><br></pre></td></tr></table></figure>
+<p>这条命令的意思是：将Windows10镜像里的第3个索引导入到Windows11索引文件里</p>
+<p>如果你想将Windows10全部索引导入到Windows11的索引文件里，只要改变SourceIndex的参数就行了（Windows10一共有四个索引）</p>
+<h2 id="重置镜像">重置镜像</h2>
+<p>这一步将把制作好的索引文件重新合成镜像</p>
+<p>第一步：下载AnyBurn</p>
+<p><strong><font color="red">AnyBurn下载：【<a href="https://www.anyburn.com/cn/download.htm">前往</a>】</font></strong></p>
+<p>第二步：开始合成重置镜像</p>
+<p>打开AnyBurn，找到编辑镜像文件，选择Windows10镜像文件，到Source文件夹，把install.esd擦除，再点击加号，选中刚才制作好的install.wim，确定，</p>
+<p>然后导出镜像就可以了</p>
+<p>现在你就拥有一个可以安装两个Windows版本的镜像了</p>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>ISO</tag>
+        <tag>系统</tag>
+        <tag>安装</tag>
       </tags>
   </entry>
 </search>
