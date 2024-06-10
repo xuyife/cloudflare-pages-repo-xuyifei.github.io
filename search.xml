@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>介绍-第一篇文章</title>
-    <url>/2023/12/24/%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <url>/2023/12/24/jie-shao-di-yi-pian-wen-zhang/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1>介绍</h1>
 <p>呀，是哪个小可爱来到了我的频道啊！！！！！</p>
 <p>别走别走，你会喜欢我的！</p>
@@ -39,7 +39,7 @@
   </entry>
   <entry>
     <title>震惊！！！国内超快速github镜像停止服务！</title>
-    <url>/2024/04/04/%E9%9C%87%E6%83%8A%EF%BC%81%EF%BC%81%EF%BC%81%E5%9B%BD%E5%86%85%E8%B6%85%E5%BF%AB%E9%80%9Fgithub%E9%95%9C%E5%83%8F%E5%81%9C%E6%AD%A2%E6%9C%8D%E5%8A%A1%EF%BC%81/</url>
+    <url>/2024/04/04/zhen-liang-guo-nei-chao-kuai-su-github-jing-xiang-ting-zhi-fu-wu/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="目录">目录</h2>
 <ul>
 <li>1.GithubFast国内镜像失效</li>
@@ -148,7 +148,7 @@
   </entry>
   <entry>
     <title>一个ISO安装多个Windows版本-合成自定义Windows安装ISO</title>
-    <url>/2023/12/29/%E4%B8%80%E4%B8%AAISO%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAWindows%E7%89%88%E6%9C%AC-%E5%90%88%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89Windows%E5%AE%89%E8%A3%85ISO/</url>
+    <url>/2023/12/29/yi-ge-iso-an-zhuang-duo-ge-windows-ban-ben-he-cheng-zi-ding-yi-windows-an-zhuang-iso/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="https://jsd.onmicrosoft.cn/gh/xuyife/source/files/uploads/2024-4-4/cmpt-img.jpg" alt="computer-img"></p>
 <p>将多个Windows安装ISO版本合并到一个ISO中，一个文件就可安装多个Windows版本</p>
 <p>以Windows10和Windows11做演示</p>
