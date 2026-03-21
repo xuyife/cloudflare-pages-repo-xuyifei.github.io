@@ -361,6 +361,7 @@ window.addEventListener('load', checkHolidays);
       
       <link rel="shortcut icon" href="https://cdn.xuyifei.js.cool/Image/favicon.ico" />
       
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdn.xuyifei.js.cool/source/dist/main.css" />
       <style>
@@ -1107,7 +1108,7 @@ window.addEventListener('load', checkHolidays);
 	<!-- 三角彩带背景 -->
   <canvas id="evanyou-canvas" style="opacity: 0.3; position: fixed; top: 0px; left: 0px; z-index: -1; width: 100%; height: 100%; pointer-events: none;"></canvas>
   <script src="https://cdn.xuyifei.js.cool/jsdelivr/evanyou_canvas.js" ></script>
-<!-- hexo injector body_end start --><script data-pjax src="https://unpkg.com/oh-my-live2d"></script><script>const oml2d = OML2D.loadOml2d({dockedPosition:"left",mobileDisplay:false,models:[{"path":"/yumi/yumi.model3.json","mobilePosition":[-10,23],"mobileScale":0.1,"mobileStageStyle":{"width":180,"height":166},"motionPreloadStrategy":"IDLE","position":[-100,0],"scale":0.15,"stageStyle":{"width":250,"height":250}},{"path":"https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json","mobilePosition":[-10,23],"mobileScale":0.1,"mobileStageStyle":{"width":180,"height":166},"motionPreloadStrategy":"IDLE","position":[-10,35],"scale":0.15,"stageStyle":{"width":250,"height":250}},{"path":"https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json","scale":0.12,"position":[0,0],"stageStyle":{"width":250},"mobileScale":0.08,"mobilePosition":[0,0],"mobileStageStyle":{"width":180}},{"path":"https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json","scale":0.12,"position":[0,0],"mobileScale":0.08,"mobilePosition":[0,0],"mobileStageStyle":{"width":180},"stageStyle":{"width":250}}],parentElement:document.body,primaryColor:"var(--btn-bg)",sayHello:false,tips:{style: {"width":230,"height":120,"left":"calc(50% - 20px)","top":"-100px"},mobileStyle: {"width":180,"height":80,"left":"calc(50% - 30px)","top":"-100px"},idleTips:{interval:15000,message:function(){
+<!-- hexo injector body_end start --><script data-pjax src="https://unpkg.com/oh-my-live2d"></script><script>const oml2d = OML2D.loadOml2d({dockedPosition:"left",mobileDisplay:false,models:[{"path":"/yumi/yumi.model3.json","mobilePosition":[-10,23],"mobileScale":0.1,"mobileStageStyle":{"width":180,"height":166},"motionPreloadStrategy":"IDLE","position":[-100,0],"scale":0.15,"stageStyle":{"width":250,"height":250}}],parentElement:document.body,primaryColor:"var(--btn-bg)",sayHello:false,tips:{style: {"width":230,"height":120,"left":"calc(50% - 20px)","top":"-100px"},mobileStyle: {"width":180,"height":80,"left":"calc(50% - 30px)","top":"-100px"},idleTips:{interval:15000,message:function(){
   return axios.get('https://v1.hitokoto.cn?c=i')
     .then(function (response) {
       return response.data.hitokoto;
